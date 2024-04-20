@@ -1,0 +1,549 @@
+[
+	{
+		"Id": 25106,
+		"Text": "Đồng nghĩa với từ hạnh phúc là từ?",
+		"Marks": 1,
+		"AnswerId": 104119,
+		"Answers": [
+			{
+				"Id": 104118,
+				"Text": "Sung sướng"
+			},
+			{
+				"Id": 104119,
+				"Text": "Toại nguyện"
+			},
+			{
+				"Id": 104120,
+				"Text": "Phúc hậu"
+			},
+			{
+				"Id": 104121,
+				"Text": "Giàu có"
+			}
+		]
+	},
+	{
+		"Id": 25107,
+		"Text": "Trái nghĩa với từ hạnh phúc là từ:",
+		"Marks": 1,
+		"AnswerId": 104122,
+		"Answers": [
+			{
+				"Id": 104122,
+				"Text": "Túng thiếu"
+			},
+			{
+				"Id": 104123,
+				"Text": "Bất hạnh"
+			},
+			{
+				"Id": 104124,
+				"Text": "Gian khổ"
+			},
+			{
+				"Id": 104125,
+				"Text": "Phúc tra"
+			}
+		]
+	},
+	
+	{
+		"Id": 25108,
+		"Text": " Từ nào dưới đây có tiếng “bảo” không có nghĩa là “giữ, chịu trách nhiệm”",
+		"Marks": 1,
+		"AnswerId": 104128,
+		"Answers": [
+			{
+				"Id": 104126,
+				"Text": "Bảo vệ"
+			},
+			{
+				"Id": 104127,
+				"Text": "Bảo hành"
+			},
+			{
+				"Id": 104128,
+				"Text": "Bảo kiếm"
+			},
+			{
+				"Id": 104129,
+				"Text": "Bảo quản"
+			}
+		]
+	},
+	{
+		"Id": 25109,
+		"Text": "Câu văn nào dưới đây dùng sai quan hệ từ:",
+		"Marks": 1,
+		"AnswerId": 104132,
+		"Answers": [
+			{
+				"Id": 104130,
+				"Text": "Tuy trời mưa to nhưng bạn Hà vẫn đến lớp đúng giờ."
+			},
+			{
+				"Id": 104131,
+				"Text": ". Thắng gầy nhưng rất khoẻ"				
+			},
+			{
+				"Id": 104132,
+				"Text": "Đất có chất màu vì nuôi cây lớn."
+			},
+			{
+				"Id": 104133,
+				"Text": "Đêm càng về khuya, trăng càng sáng."
+			}
+		]
+	},
+	{
+		"Id": 25110,
+		"Text": "Từ nào dưới đây không đồng nghĩa với các từ còn lại?",
+		"Marks": 1,
+		"AnswerId": 104136,
+		"Answers": [
+			{
+				"Id": 104134,
+				"Text": "Cầm"
+			},
+			{
+				"Id": 104135,
+				"Text": "Nắm"
+			},
+			{
+				"Id": 104136,
+				"Text": "Cõng"
+			},
+			{
+				"Id": 104137,
+				"Text": "Xách"
+			}
+		]
+	},
+	{
+		"Id": 25111,
+		"Text": "Dòng nào có từ mà tiếng nhân không cùng nghĩa với tiếng nhân trong các từ còn lại?",
+		"Marks": 1,
+		"AnswerId": 104141,
+		"Answers": [
+			{
+				"Id": 104138,
+				"Text": "Nhân loại, nhân tài, nhân lực"
+			},
+			{
+				"Id": 104139,
+				"Text": "Nhân hậu,nhân nghĩa,nhân ái"
+			},
+			{
+				"Id": 104140,
+				"Text": "Nhân công,nhân chứng,chủ nhân"
+			},
+			{
+				"Id": 104141,
+				"Text": "Nhân dân,quân nhân,nhân vật"
+			}
+		]
+	},
+	{
+		"Id": 25112,
+		"Text": "Từ nào sau đây gần nghĩa nhất với từ hòa bình",
+		"Marks": 1,
+		"AnswerId": 104144,
+		"Answers": [
+			{
+				"Id": 104142,
+				"Text": "Bình yên"
+			},
+			{
+				"Id": 104143,
+				"Text": "Hòa thuận"
+			},
+			{
+				"Id": 104144,
+				"Text": "Thái bình"
+			},
+			{
+				"Id": 104145,
+				"Text": "Hiền hòa"
+			}
+		]
+	},
+	{
+		"Id": 25113,
+		"Text": "Câu nào sau đây không phải là câu ghép .",
+		"Marks": 1,
+		"AnswerId": 104149,
+		"Answers": [
+			{
+				"Id": 104146,
+				"Text": "Cánh đồng lúa quê em đang chín rộ."
+			},
+			{
+				"Id": 104147,
+				"Text": "Mây đen kéo kín bầu trời, cơn mưa ập tới"
+			},
+			{
+				"Id": 104148,
+				"Text": " Bố đi xa về, cả nhà vui mừng"
+			},
+			{
+				"Id": 104149,
+				"Text": "Bầu trời đầy sao nhưng lặng gió."
+			}
+		]
+	},
+	{
+		"Id": 25114,
+		"Text": "Trong câu sau:' Ngay thềm lăng, mười tám cây vạn tuế tượng trưng cho một đoàn quân danh dự đứng trang nghiêm 'có:",
+		"Marks": 1,
+		"AnswerId": 104150,
+		"Answers": [
+			{
+				"Id": 104150,
+				"Text": "1Tính từ ; 1 động từ"
+			},
+			{
+				"Id": 104151,
+				"Text": "2Tính từ ; 2 động từ"
+			},
+			{
+				"Id": 104152,
+				"Text": "2Tính từ ; 1 động từ."
+			},
+			{
+				"Id": 104153,
+				"Text": " 3Tính từ ; 3 động từ"
+			}
+		]
+	},
+	{
+		"Id": 25115,
+		"Text": "Câu:'Bạn có thể đưa cho tôi lọ mực không?'thuộc kiểu câu:",
+		"Marks": 1,
+		"AnswerId": 104155,
+		"Answers": [
+			{
+				"Id": 104154,
+				"Text": "Câu cầu khiến"
+			},
+			{
+				"Id": 104155,
+				"Text": "Câu hỏi"
+			},
+			{
+				"Id": 104156,
+				"Text": "Câu hỏi có mục đích cầu khiến"
+			},
+			{
+				"Id": 104157,
+				"Text": "Câu cảm"
+			}
+		]
+	},
+	{
+		"Id": 25116,
+		"Text": "Chọn từ trái nghĩa với từ “ thắng lợi” ",
+		"Marks": 1,
+		"AnswerId": 104161,
+		"Answers": [
+			{
+				"Id": 104158,
+				"Text": "Thua cuộc"
+			},
+			{
+				"Id": 104159,
+				"Text": "Chiến bại"
+			},
+			{
+				"Id": 104160,
+				"Text": "Tổn thất"
+			},
+			{
+				"Id": 104161,
+				"Text": "Thất bại"
+			}
+		]
+	},
+	{
+		"Id": 25117,
+		"Text": ": Từ điền vào chỗ trống của câu: ' Hẹp nhà...bụng ' là:",
+		"Marks": 1,
+		"AnswerId": 104163,
+		"Answers": [
+			{
+				"Id": 104162,
+				"Text": "nhỏ"
+			},
+			{
+				"Id": 104163,
+				"Text": "rộng"
+			},
+			{
+				"Id": 104164,
+				"Text": "to"
+			},
+			{
+				"Id": 104165,
+				"Text": "tốt"
+			}
+		]
+	},
+	{
+		"Id": 25118,
+		"Text": "Trong các từ sau từ nào không phải là danh từ.",
+		"Marks": 1,
+		"AnswerId": 104167,
+		"Answers": [
+			{
+				"Id": 104166,
+				"Text": "Niềm vui"
+			},
+			{
+				"Id": 104167,
+				"Text": "Màu xanh"
+			},
+			{
+				"Id": 104168,
+				"Text": "Nụ cười"
+			},
+			{
+				"Id": 104169,
+				"Text": "Lầy lội"
+			}
+		]
+	},
+	{
+		"Id": 25119,
+		"Text": "Truyện 'ăn xôi đậu để thi đậu' từ ' đậu' thuộc:",
+		"Marks": 1,
+		"AnswerId": 104170,
+		"Answers": [
+			{
+				"Id": 104170,
+				"Text": "Từ nhiều nghĩa"
+			},
+			{
+				"Id": 104171,
+				"Text": "Từ đồng nghĩa"
+			},
+			{
+				"Id": 104172,
+				"Text": "Trái nghĩa"
+			},
+			{
+				"Id": 104173,
+				"Text": "Từ đồng âm"
+			}
+		]
+	},
+	{
+		"Id": 25120,
+		"Text": "Thành ngữ nào dới đây nói về tinh thần dũng cảm?",
+		"Marks": 1,
+		"AnswerId": 104177,
+		"Answers": [
+			{
+				"Id": 104174,
+				"Text": "Chân lấm tay bùn. "
+			},
+			{
+				"Id": 104175,
+				"Text": "Đi sớm về khuya"
+			},
+			{
+				"Id": 104176,
+				"Text": "Vào sinh ra tử. "
+			},
+			{
+				"Id": 104177,
+				"Text": "Chết đứng còn hơn sống quỳ."
+			}
+		]
+	},
+	{
+		"Id": 25121,
+		"Text": "Trong các nhóm từ sau đây , nhóm nào là tập hợp các từ láy:",
+		"Marks": 1,
+		"AnswerId": 104181,
+		"Answers": [
+			{
+				"Id": 104178,
+				"Text": "xa xôi, mải miết, mong mỏi, mơ mộng."
+			},
+			{
+				"Id": 104179,
+				"Text": "xa xôi, mải miết, mong mỏi , mơ màng."
+			},
+			{
+				"Id": 104180,
+				"Text": "xa xôi , mong ngóng , mong mỏi, mơ mộng."
+			},
+			{
+				"Id": 104181,
+				"Text": "xa xôi, xa lạ, mải miết , mong mỏi."
+			}
+		]
+	},
+	{
+		"Id": 25122,
+		"Text": "Trong các câu sau đây, câu nào có từ 'ăn' được dùng theo nghĩa gốc:",
+		"Marks": 1,
+		"AnswerId": 104183,
+		"Answers": [
+			{
+				"Id": 104182,
+				"Text": " Làm không cẩn thận thì ăn đòn như chơi!"
+			},
+			{
+				"Id": 104183,
+				"Text": "Chúng tôi là những người làm công ăn lương."
+			}
+		]
+	},
+	{
+		"Id": 25123,
+		"Text": " Câu chia theo mục đích diễn đạt gồm có các loại câu sau:",
+		"Marks": 1,
+		"AnswerId": 104184,
+		"Answers": [
+			{
+				"Id": 104184,
+				"Text": "Câu kể, câu đơn, câu ghép, câu hỏi."
+			},
+			{
+				"Id": 104185,
+				"Text": "Câu hỏi, câu ghép, câu khiến, câu kể."
+			},
+			{
+				"Id": 104186,
+				"Text": "Câu kể, câu hỏi, câu cảm, câu khiến"
+			},
+			{
+				"Id": 104187,
+				"Text": "Câu kể, câu cảm, câu hỏi, câu đơn."
+			}
+		]
+	},
+	{
+		"Id": 25124,
+		"Text": "Câu nào có từ “ chạy” mang nghĩa gốc?",
+		"Marks": 1,
+		"AnswerId": 104191,
+		"Answers": [
+			{
+				"Id": 104188,
+				"Text": "Tết đến, hàng bán rất chạy"
+			},
+			{
+				"Id": 104189,
+				"Text": "Nhà nghèo, Bác phải chạy ăn từng bữa."
+			},
+			{
+				"Id": 104190,
+				"Text": "Lớp chúng tôi tổ chức thi chạy."
+			},
+			{
+				"Id": 104191,
+				"Text": "Đồng hồ chạy rất đúng giờ."
+			}
+		]
+	},
+	
+	{
+		"Id": 25125,
+		"Text": "Bài 'Thư gửi các học sinh' do ai viết?",
+		"Marks": 1,
+		"AnswerId": 104193,
+		"Answers": [
+			{
+				"Id": 104192,
+				"Text": "Võ Nguyên Giáp"
+			},
+			{
+				"Id": 104193,
+				"Text": "Bác Hồ"
+			},
+			{
+				"Id": 104194,
+				"Text": "Nguyễn Thị Minh Khai"
+			},
+			{
+				"Id": 104195,
+				"Text": "Phạm Văn Đồng"
+			}
+		]
+	},
+	{
+		"Id": 25126,
+		"Text": "Ngày khai trường tháng 9 năm 1945 có gì đặc biệt so với những ngày khai trường khác?",
+		"Marks": 1,
+		"AnswerId": 104199,
+		"Answers": [
+			{
+				"Id": 104196,
+				"Text": " Là ngày toàn dân đưa trẻ đến trường"
+			},
+			{
+				"Id": 104197,
+				"Text": " Là ngày khai trường đầu tiên của nước Việt Nam dân chủ cộng hòa"
+			},
+			{
+				"Id": 104198,
+				"Text": "Từ ngày khai trường này trở đi, các em bắt đầu dược nhận một nền giáo dục hoàn toàn Việt Nam"
+			},
+			{
+				"Id": 104199,
+				"Text": "Cả đáp án B và C đều đúng"
+			}
+		]
+	},
+	{
+		"Id": 25127,
+		"Text": "Trong thư Bác Hồ đã tưởng tượng ra các bạn học sinh trong ngày đầu khai trường của nước Việt Nam độc lập như thế nào?",
+		"Marks": 1,
+		"AnswerId": 104202,
+		"Answers": [
+			{
+				"Id": 104200,
+				"Text": "Các bạn học sinh e sợ, rụt rè khi lần đầu tiên tới lớp mới, trường mới"
+			},
+			{
+				"Id": 104201,
+				"Text": "các bạn học sinh khóc lóc vì phải xa bố mẹ tới ngôi trường mới"
+			},
+			{
+				"Id": 104202,
+				"Text": "cảnh tượng nhộn nhịp, tưng bừng, các bạn học sinh vui vẻ vì sau bao nhiêu lâu, bao cuộc chuyển biên lại được gặp thầy gặp bạn."
+			},
+			{
+				"Id": 104203,
+				"Text": "cảnh tượng nhốn nháo, lạc quan, các bạn học sinh òa khóc trong vòng tay thầy cô, bè bạn"
+			}
+		]
+	},
+	{
+		"Id": 25128,
+		"Text": "Nhiệm vụ của toàn dân ta sau cách mạng là gì?",
+		"Marks": 1,
+		"AnswerId": 104204,
+		"Answers": [
+			{
+				"Id": 104204,
+				"Text": "xây dựng lại cơ đồ mà tổ tiên để lại, làm sao theo kịp các nước toàn cầu"
+			},
+			{
+				"Id": 104205,
+				"Text": "phát triển kinh tế, xây dựng đất nước đi lên"
+			},
+			{
+				"Id": 104206,
+				"Text": "chăm lo phát triển khoa học công nghệ hiện đại"
+			},
+			{
+				"Id": 104207,
+				"Text": "Cả ba ý trên đều đúng"
+			}
+		]
+	}
+]
+	

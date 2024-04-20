@@ -1,0 +1,220 @@
+[
+	{
+		"Id": 25262,
+		"Text": "The manager took her ________ when she noticed the error in the report.",
+		"Marks": 1,
+		"AnswerId": 104715,
+		"Answers": [
+			{
+				"Id": 104712,
+				"Text": "time"
+			},
+			{
+				"Id": 104713,
+				"Text": ". glasses"
+			},
+			{
+				"Id": 104714,
+				"Text": "break"
+			},
+			{
+				"Id": 104715,
+				"Text": "attention"
+			}
+		]
+	},
+	{
+		"Id": 25263,
+		"Text": " The new policy is in ________ with our company’s environmental goals.",
+		"Marks": 1,
+		"AnswerId": 104717,
+		"Answers": [
+			{
+				"Id": 104716,
+				"Text": "line"
+			},
+			{
+				"Id": 104717,
+				"Text": "touch"
+			},
+			{
+				"Id": 104718,
+				"Text": " tune"
+			},
+			{
+				"Id": 104719,
+				"Text": " sync"
+			}
+		]
+	},
+	{
+		"Id": 25264,
+		"Text": "You can’t just ________ your responsibilities as a team leader.",
+		"Marks": 1,
+		"AnswerId": 104720,
+		"Answers": [
+			{
+				"Id": 104720,
+				"Text": "walk off"
+			},
+			{
+				"Id": 104721,
+				"Text": "walk away from"
+			},
+			{
+				"Id": 104722,
+				"Text": "walk to"
+			},
+			{
+				"Id": 104723,
+				"Text": "walk with"
+			}
+		]
+	},
+	{
+		"Id": 25265,
+		"Text": "The early bird ________ the worm",
+		"Marks": 1,
+		"AnswerId": 104727,
+		"Answers": [
+			{
+				"Id": 104724,
+				"Text": "gets"
+			},
+			{
+				"Id": 104725,
+				"Text": "takes"
+			},
+			{
+				"Id": 104726,
+				"Text": "catches"
+			},
+			{
+				"Id": 104727,
+				"Text": "finds"
+			}
+		]
+	},
+	{
+		"Id": 25266,
+		"Text": "His ideas didn’t ________ with mine, so we decided to go our separate ways.",
+		"Marks": 1,
+		"AnswerId": 104729,
+		"Answers": [
+			{
+				"Id": 104728,
+				"Text": "jive"
+			},
+			{
+				"Id": 104729,
+				"Text": " match"
+			},
+			{
+				"Id": 104730,
+				"Text": "compare"
+			},
+			{
+				"Id": 104731,
+				"Text": "align"
+			}
+		]
+	},
+	{
+		"Id": 25267,
+		"Text": "Mary always speaks her mind; she’s very ________.",
+		"Marks": 1,
+		"AnswerId": 104733,
+		"Answers": [
+			{
+				"Id": 104732,
+				"Text": "outspoken"
+			},
+			{
+				"Id": 104733,
+				"Text": "outlandish"
+			},
+			{
+				"Id": 104734,
+				"Text": "outside"
+			},
+			{
+				"Id": 104735,
+				"Text": "outgoing"
+			}
+		]
+	},
+	{
+		"Id": 25268,
+		"Text": "When you face a challenge, you must stand ________ and face it head-on",
+		"Marks": 1,
+		"AnswerId": 104740,
+		"Answers": [
+			{
+				"Id": 104736,
+				"Text": "down"
+			},
+			{
+				"Id": 104737,
+				"Text": "up"
+			},
+			{
+				"Id": 104738,
+				"Text": "away"
+			},
+			{
+				"Id": 104739,
+				"Text": "out"
+			}
+		
+		]
+	},
+	{
+		"Id": 25269,
+		"Text": "She has a heart of ________ and always helps those in need",
+		"Marks": 1,
+		"AnswerId": 104742,
+		"Answers": [
+			{
+				"Id": 104741,
+				"Text": " silver"
+			},
+			{
+				"Id": 104742,
+				"Text": "stone"
+			},
+			{
+				"Id": 104743,
+				"Text": "gold"
+			},
+			{
+				"Id": 104744,
+				"Text": "bronze"
+			}
+		]
+	},
+	{
+		"Id": 25270,
+		"Text": "Phương thức nào được chạy trước tất cả test case?",
+		"Marks": 1,
+		"AnswerId": 104746,
+		"Answers": [
+			{
+				"Id": 104745,
+				"Text": "tearDown()"
+			},
+			{
+				"Id": 104746,
+				"Text": "setUp()"
+			},
+			{
+				"Id": 104747,
+				"Text": "settingUp()"
+			},
+			{
+				"Id": 104748,
+				"Text": "tearingDown()"
+			}
+		]
+	}
+]
+	

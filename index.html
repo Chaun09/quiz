@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta property="og:title" content="qna-pages-frogquiz">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Trắc nghiệm online</title>
+
+	<!-- icon -->
+	<link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css" />
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- my css -->
+	<link rel="stylesheet" href="./assets/css/style.css" />
+	<link rel="stylesheet" href="./assets/css/responsive.css" />
+
+	<!-- mode -->
+	<script src="js/mode.js"></script>
+	<link rel="stylesheet" href="assets/css/mode.css">
+
+	<!-- toast -->
+	<script src="toast/main.js"></script>
+	<link rel="stylesheet" href="toast/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
+
+	<!-- angularJS -->
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.js"></script>
+
+	<!-- fire -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css
+    " rel="stylesheet">
+
+	<!-- fire-base -->
+	<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+	<script src="db/fire-base/connect.js"></script>
+</head>
+
+<body ng-app="myApp">
+	<style>
+		
+		.switch {
+			font-size: 17px;
+			position: relative;
+			display: inline-block;
+			width: 3.5em;
+			height: 2em;
+		}
+
+		/* Hide default HTML checkbox */
+		.switch input {
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
+
+		/* The slider */
+		.slider-btn {
+			--background: #28096b;
+			position: absolute;
+			cursor: pointer;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: var(--background);
+			transition: .5s;
+			border-radius: 30px;
+		}
+
+		.slider-btn:before {
+			position: absolute;
+			content: "";
+			height: 1.4em;
+			width: 1.4em;
+			border-radius: 50%;
+			left: 10%;
+			bottom: 15%;
+			box-shadow: inset 8px -4px 0px 0px #fff000;
+			background: var(--background);
+			transition: .5s;
+		}
+
+		input:checked+.slider-btn {
+			background-color: #522ba7;
+		}
+
+		input:checked+.slider-btn:before {
+			transform: translateX(100%);
+			box-shadow: inset 15px -4px 0px 15px #fff000;
+		}
+	</style>
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Tìm kiếm</h4>
+				</div>
+				<div class="modal-body">
+					<div class="search-container">
+						<form class="search-inp" action="">
+							<i class='bx bx-search-alt'></i>
+							<input type="text" placeholder="tìm kiếm..." name="search">
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+<!--
+	<div id="toast"></div>
+	<div class="tablet text-heading">
+		<div class="content-tablet">
+			<h1>Giao diện chỉ hỗ trợ PC và Mobile</h1>
+			<h2>Thành thật xin lỗi vì sự bất tiện này</h2>
+		</div>
+	</div>
+-->
+	<div id="main">
+		<div id="header">
+			<ul class="nav-pc" id="nav">
+				<li><a id="heading-logo" style="font-size: 20px;" href="#main">Trắc nghiệm online</a>
+				</li>
+				<li><a href=" #about">Giới thiệu</a></li>
+				<li>
+					<a>Khóa học
+						<i class="nav-arrow-down ti-angle-down"></i>
+					</a>
+					<ul class="subnav">
+						<li><a href="#courses">Tất cả</a></li>
+						<li><a href="#courses">Tiếng anh B1</a></li>
+						<li><a href="#courses">Toán 1</a></li>
+						<li><a href="#courses">Tiếng việt 5</a></li>
+						<!--<li><a href="#courses">Lập trình ASP.NET</a></li>-->
+						<!--<li><a href="#courses">Điện toán đám mây</a></li>>-->
+						<li><a href="#courses">SQL Server</a></li>
+						<li><a href="#courses">Cơ sở dữ liệu</a></li>
+						<li><a href="#courses">HTML và CSS</a></li>
+						<li><a href="#courses">Lập trình game 2D</a></li>
+						<li><a href="#courses">Internet Marketing</a></li>
+						<li><a href="#courses">Javascrip</a></li>
+					</ul>
+				</li>
+				<li><a href="#contact">Liên hệ</a></li>
+				<li><a href="#contribute">Góp ý</a></li>
+				<li ng-if="Student == null"><a href="#login">Đăng nhập</a></li>
+				<li ng-if="Student == null"><a href="#register">Đăng ký</a></li>
+
+				<li ng-if="Student != null">
+					<a>{{Student.fullname.slice(Student.fullname.lastIndexOf(" "))}}
+						<i class="nav-arrow-down ti-angle-down"></i>
+					</a>
+					<ul class="subnav subnav-user">
+						<li><a href="#infor">Chỉnh sửa thông tin</a></li>
+						<li><a ng-if="Student.role == 1" href="#manager">Quản lí tài khoản</a></li>
+						<li><a href="#changepassword">Đổi mật khẩu</a></li>
+						<li><a ng-click="logout()">Đăng xuất</a></li>
+					</ul>
+				</li>
+
+			</ul>
+
+			<div style="margin-right: 0px;" class="search-btn mode">
+				<i onclick="changesIcon(this)" class="bx bx-sun bx-moon sun-moon"></i>
+				
+			</div>
+			<!-- search -->
+			<div class="search-btn" data-toggle="modal" data-target="#myModal" id="search">
+				<i class="search-icon ti-search"> </i>
+			</div>
+
+
+			<div id="mobile-menu" class="mobile-menu-btn">
+
+				<!-- <i id="menu-i" class="menu-icon ti-menu"></i> -->
+				<button id="menu-i" class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+			</div>
+			<div class="mobile-menu-btn mode">
+				<!-- <i class="search-icon ti-search" id="search-mobile"> </i> -->
+				<i onclick="changesIcon(this)" class="bx bx-sun bx-moon sun-moon"></i>
+			</div>
+
+			<!-- .nav -->
+		</div>
+
+		<div id="menu-mobile">
+			<ul class="nav">
+				<li><a href=""></a></li>
+				<li><a href="#about">Giới thiệu</a></li>
+				<li>
+					<a>Khóa học
+						<i class="nav-arrow-down ti-angle-down"></i>
+					</a>
+					<ul class="subnav">
+						<li><a href="#courses">Tất cả</a></li>
+						<li><a href="#courses">Tiếng anh B1</a></li>
+						<li><a href="#courses">Toán 1</a></li>
+						<li><a href="#courses">Tiếng việt 5</a></li>
+						<!--<li><a href="#courses">Lập trình ASP.NET</a></li>-->
+						<!--<li><a href="#courses">Điện toán đám mây</a></li>>-->
+						<li><a href="#courses">SQL Server</a></li>
+						<li><a href="#courses">Cơ sở dữ liệu</a></li>
+						<li><a href="#courses">HTML và CSS</a></li>
+						<li><a href="#courses">Lập trình game 2D</a></li>
+						<li><a href="#courses">Internet Marketing</a></li>
+						<li><a href="#courses">Javascrip</a></li>
+					</ul>
+				</li>
+				<li><a href="#contact">Liên hệ</a></li>
+				<li><a href="#contribute">Góp ý</a></li>
+				<li ng-if="Student == null"><a href="#login">Đăng nhập</a></li>
+				<li ng-if="Student == null"><a href="#register">Đăng ký</a></li>
+
+				<li ng-if="Student != null">
+					<a>Hi, {{Student.fullname.slice(Student.fullname.lastIndexOf(" "))}}
+						<i class="nav-arrow-down ti-angle-down"></i>
+					</a>
+					<ul class="subnav subnav-user">
+						<li><a href="#infor">Chỉnh sửa thông tin</a></li>
+						<li><a ng-if="Student.role == 1" href="#manager">Quản lí tài khoản</a></li>
+						<li><a href="#changepassword">Đổi mật khẩu</a></li>
+						<li><a ng-click="logout()">Đăng xuất</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+
+		<main ng-view>
+
+		</main>
+	
+	</div>
+
+	<script src="js/mobile-menu.js"></script>
+	<script src="router/js/main.js"></script>
+	<script src="router/js/login.js"></script>
+	<script src="router/js/qnaCtrl.js"></script>
+	<script src="router/js/register.js"></script>
+	<script src="router/js/courseCtrl.js"></script>
+	<script src="router/js/coursesCtrl.js"></script>
+	<script src="router/js/infor.js"></script>
+	<script src="router/js/aboutCtrl.js"></script>
+	<script src="router/js/contributeCtrl.js"></script>
+	<script src="router/js/contactCtrl.js"></script>
+	<script src="router/js/changepassword.js"></script>
+	<script src="router/js/forgetPassword.js"></script>
+	<script src="router/js/manager.js"></script>
+
+	<script type="module">
+		
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
+
+		// TODO
+		const firebaseConfig = {
+			apiKey: "AIzaSyAYXprRSstGjbytZt-hL76pF6iidX6GVCM",
+			authDomain: ".ploan@gmail.com",
+			databaseURL: "https://frog-quiz-1b87e-default-rtdb.firebaseio.com",
+			projectId: "frog-quiz-1b87e",
+			storageBucket: "ploan@gmail.com",
+			messagingSenderId: "531268254580",
+			appId: "1:531268254580:web:ea3b4d8699f2b7be9c4a21",
+			measurementId: "G-N04SML8LWH"
+		};
+
+		firebase.initializeApp(firebaseConfig);
+		firebase.analytics();
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
+
+	<script>
+		function reloadPage() {
+			
+
+			// người dùng , mật khẩu 
+			let userName = localStorage.getItem("user-name");
+			let userPass = localStorage.getItem("user-pass");
+
+			let path = 'user';
+			// let pathname = 'pass';
+			var dbRef = firebase.database().ref().child(path + '/' + userName);
+
+			// alert(userName);
+			if (userName != "none" && userPass != "none") {
+				dbRef.on('value', (snapshot) => {
+					if (snapshot.val() == null) {
+						return;
+					}
+					let getEmail = snapshot.val().email;
+					let getUserName = snapshot.val().username;
+					let getPass = snapshot.val().password;
+					if (userPass == getPass && userName == getUserName) {
+						//alert(true);
+						$rootScope.Student = snapshot.val();
+
+						window.location.href = '#qna';
+						window.location.reload();
+
+					}
+
+				}, (errorObject) => {
+					console.log('The read failed: ' + errorObject.name);
+				});
+			}
+
+		}
+	//toast
+		function showSuccessToast() {
+			toast({
+				title: "Thành công!",
+				message: "Đến với trắc nghiệm",
+				type: "success",
+				duration: 5000
+			});
+		}
+
+		function showErrorToast() {
+			toast({
+				title: "Thất bại!",
+				message: "Vui lòng đăng nhập vào hệ thống để bắt đầu.",
+				type: "error",
+				duration: 5000
+			});
+		}
+	</script>
+</body>
+
+</html>
