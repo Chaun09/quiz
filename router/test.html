@@ -1,0 +1,32 @@
+
+<button id="export-button">Export to Excel</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+<script>
+  
+  const fs = require('fs');
+const xlsx = require('xlsx');
+
+const exportButton = document.getElementById('export-button');
+
+exportButton.addEventListener('click', () => {
+  // Steps to read data and create workbook remain the same (refer to previous explanation)
+  const subjectsData = fs.readFileSync('./db/Subjects.json', 'utf8');
+  const subjects = JSON.parse(subjectsData);
+
+  const workbook = xlsx.utils.book_new();
+  const worksheet = xlsx.utils.aoa_to_sheet([
+      ['Id', 'Name', 'Logo'], // Header row
+      ...subjects.map(subject => [subject.Id, subject.Name, subject.Logo]) // Data rows
+  ]);
+
+  xlsx.utils.sheet_add_to_book(worksheet, workbook, 'Subjects');
+
+  // Trigger a download of the Excel file
+  xlsx.writeFile(workbook, 'subjects.xlsx', { bookType: 'xlsx', type: 'binary' });
+});
+
+
+
+
+
+</script>

@@ -1,4 +1,5 @@
-<section>
+
+	<section>
 	<style>
 		.main {
 			margin-top: 100px;
@@ -486,49 +487,41 @@
 							
 							
 						</div>
-						
+						<table id="tbl_exporttable_to_xls" border="1">
+							<thead>
+								<th>Môn</th>
+								<th>Điểm</th>
+								<th>Câu</th>
+								<th>Câu</th>
 							
-						<button id="exportButton">Xuất Excel</button>
+							</thead>
+							<tbody>
+								<tr>
+									<td>{{subject.Name}}</td>
+									<td>{{point}}</td>
+									<td></td>
+									<td></td>
 
-						<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-						
+									
+								</tr>
+								
+							</tbody>
+						</table>
+						<button onclick="ExportToExcel('xlsx')">Export table to excel</button>
 						<script>
-					    
-						document.getElementById('exportButton').addEventListener('click', function () {
-						  // Create a new workbook
-						
-						  var wb = XLSX.utils.book_new();
 
-						
-						  
-						  
-						  // Prepare your data in the desired format (replace with your actual data)
-						  var data = [
-							["gg","gg","gg"],
-							["gg","gg","gg"]
-	
-	
-];
-
-						
-						  // Create a worksheet from the data
-						  var ws = XLSX.utils.aoa_to_sheet(data);
-						
-						  // Add the worksheet to the workbook and give it a name
-						  XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
-						
-						  // Optional: Styling (uncomment if desired)
-						  // XLSX.utils.sheet_add_aoa(ws, [
-						  //   ["Header 1", "Header 2", "Header 3"], // Header row with bold styling
-						  // ], { cellStyles: [{ font: { bold: true } }] }); // Apply bold style to header row
-						
-						  // Download the Excel file
-						  XLSX.writeFile(wb, 'Chaungu.xlsx');
-						});
+							function ExportToExcel(type, fn, dl) {
+								var elt = document.getElementById('tbl_exporttable_to_xls');
+								var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
+								return dl ?
+									XLSX.write(wb, { bookType: type, bookSST: true, type: 'base64' }) :
+									XLSX.writeFile(wb, fn || ('ExcelĐiểm.' + (type || 'xlsx')));
+							}
+					
 						</script>
-						
-
-						
+							<script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+					
+					
 							
 						
 		
